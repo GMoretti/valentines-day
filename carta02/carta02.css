@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fae1dd;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Cartinha */
+.carta {
+  background-color: #fff2df;
+  padding: 30px;
+  width: 70%;
+  max-width: 600px;
+  border: 2px dashed #5b1e9d;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Título com fonte personalizada */
+.titulo {
+  font-family: 'brush Script MT', cursive;
+  font-size: 44px;
+  text-align: center;
+  color: #31011d;
+  margin-bottom: 20px;
+}
+
+
+/* Video no final */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-container video {
+    width: 250px;
+    height: 444px; /* proporcional a 1080x1920 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+
+    .video-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.video-wrapper video {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.heart-left, .heart-right {
+  position: absolute;
+  font-size: 28px;
+  animation: beat 1.2s infinite ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  user-select: none;
+}
+
+.heart-left {
+  left: -40px;
+}
+
+.heart-right {
+  right: -40px;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.4);
+  }
+}
+
+.botao-link {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn {
+  background-color: #ed5555;
+  color: #ffdede;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-align: justify;
+  border-radius: 25px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #9d1e1e;
+  transform: scale(1.05);
+}
